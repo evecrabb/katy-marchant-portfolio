@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 layout: index.html
 ---
 

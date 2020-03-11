@@ -1,0 +1,12 @@
+.project-list {
+  list-style-type: none;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));  
+
+  &__item {
+    border: solid red;
+    display: block;
+    height: 324px;
+  }
+}

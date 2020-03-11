@@ -1,5 +1,18 @@
-.test {
-  color: red;
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.project-list {
+  list-style-type: none;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+}
+.project-list__item {
+  border: solid red;
+  display: block;
+  height: 324px;
 }
 
 /*# sourceMappingURL=styles.css.map */
