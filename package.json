@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @11ty/eleventy --input=content --output=public --serve"
+    "serve": "npx @11ty/eleventy --input=content --output=public --serve",
+    "css:dev": "sass src/styles/main.scss public/styles.css --style=expanded --watch",
+    "css:final": "sass --style=compressed",
+    "dev": "npm run serve && npm run css:dev"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
   "homepage": "https://github.com/evecrabb/katy-marchant-portfolio#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0"
+  },
+  "dependencies": {
+    "sass": "^1.22.5"
   }
 }
