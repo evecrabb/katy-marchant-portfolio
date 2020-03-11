@@ -1,5 +1,6 @@
 {% include _head.html %}
 {% include _nav.html %}
-      <h1>{{ title }}</h1>
-      {{ content }}
+{%- for post in collections.all -%}
+  <li><a href="{{ post.url }}">{{ post.url }}</a></li>
+{%- endfor -%}
 {% include _footer.html %}
