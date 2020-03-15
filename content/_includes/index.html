@@ -3,7 +3,7 @@
 <main>
   <ul class="project-list">
   {%- for post in collections.all -%}
-    <li><a class="project-list__item" href="{{ post.url }}">{{ post.url }}</a></li>
+  <li><a class="project-list__item" href="{{ post.url }}"><img src="{{ post.url }}/{{ .post.data.featuredImage }}" class="project-list__item-image" /></a></li>
   {%- endfor -%}
   </ul>
 </main>

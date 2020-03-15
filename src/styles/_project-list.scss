@@ -1,12 +1,18 @@
 .project-list {
   list-style-type: none;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));  
+  display: flex;
+  flex-wrap: wrap;
 
   &__item {
-    border: solid red;
     display: block;
-    height: 324px;
+    overflow-wrap: break-word;
+    min-width: 320px;
+    max-width: 500px;
+    flex: 1 1 500px;
+
+    &-image {
+      display: block;
+      max-width: 100%;
+    }
   }
 }
