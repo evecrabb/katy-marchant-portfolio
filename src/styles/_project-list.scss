@@ -4,7 +4,9 @@
   flex-wrap: wrap;
 
   &__item {
+    $project0list__item: &;
     display: block;
+    position: relative;
     overflow-wrap: break-word;
     min-width: 320px;
     max-width: 500px;
@@ -13,6 +15,30 @@
     &-image {
       display: block;
       max-width: 100%;
+    }
+
+    &-title {
+      $whiteSpacing: 24px;
+
+      position: absolute;
+      top: $whiteSpacing;
+      right: $whiteSpacing;
+      bottom: $whiteSpacing;
+      left: $whiteSpacing;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255,255,255, 0.7);
+      color: black;
+      text-transform: uppercase;
+      transition: transform .1s ease-in-out;
+      transform: scale(0);    
+    }
+
+    &:hover {
+      #{$project0list__item}-title {
+        transform: scale(1);
+      }
     }
   }
 }

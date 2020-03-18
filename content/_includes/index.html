@@ -2,9 +2,14 @@
 {% include _nav.html %}
 <main>
   <ul class="project-list">
-  {%- for post in collections.all -%}
-  <li><a class="project-list__item" href="{{ post.url }}"><img src="{{ post.url }}/{{ .post.data.featuredImage }}" class="project-list__item-image" /></a></li>
-  {%- endfor -%}
+    {%- for post in collections.all -%}
+      <li>
+        <a class="project-list__item" href="{{ post.url }}">
+          <img src="{{ post.url }}/{{ .post.data.featuredImage }}" class="project-list__item-image" />
+          <span class="project-list__item-title">{{ .post.data.title }}</span>
+        </a>
+      </li>
+    {%- endfor -%}
   </ul>
 </main>
 {% include _footer.html %}
