@@ -1,8 +1,8 @@
 <nav>
-  <h2 class="">Work</h2>
-  <ul>
+  <h2>Work</h2>
+  <ul class="km-nav">
   {%- for post in collections.all -%}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    <li class="km-nav__item"><a class="km-nav__item-link" href="{{ post.url }}">{{ post.data.title }}</a></li>
   {%- endfor -%}
   </ul>
 </nav>
