@@ -1,17 +1,21 @@
 {% include _head.html %}
-<h1>{{ title }}</h1>
-{% include _nav.html %}
 <main>
-  {{ content }}
-  <ul class="project-list">
-    {%- for post in collections.all -%}
-      <li>
-        <a class="project-list__item" href="{{ post.url }}">
-          <img src="{{ post.url }}/{{ .post.data.featuredImage }}" class="project-list__item-image" />
-          <span class="project-list__item-title">{{ .post.data.title }}</span>
-        </a>
-      </li>
-    {%- endfor -%}
-  </ul>
+  <header>
+    <h1>{{ title }}</h1>
+    {% include _nav.html %}
+  </header>
+  <section>
+    {{ content }}
+    <ul class="project-list">
+      {%- for post in collections.all -%}
+        <li>
+          <a class="project-list__item" href="{{ post.url }}">
+            <img src="{{ post.url }}/{{ .post.data.featuredImage }}" class="project-list__item-image" />
+            <span class="project-list__item-title">{{ .post.data.title }}</span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </section>
 </main>
 {% include _footer.html %}
