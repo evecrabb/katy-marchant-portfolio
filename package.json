@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx @11ty/eleventy --input=content --serve",
     "css:dev": "sass src/styles/main.scss public/styles.css --style=expanded --watch",
-    "css:final": "sass --style=compressed",
+    "css:final": "sass src/styles/main.scss public/styles.css --style=compressed",
     "dev": "npm run serve && npm run css:dev",
-    "deploy": "npx @11ty/eleventy && npm run css:final"
+    "deploy": "npx @11ty/eleventy --input=content && npm run css:final"
   },
   "repository": {
     "type": "git",
