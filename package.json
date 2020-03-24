@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "npx @11ty/eleventy --input=content --output=public --serve",
+    "serve": "npx @11ty/eleventy --input=content --serve",
     "css:dev": "sass src/styles/main.scss public/styles.css --style=expanded --watch",
     "css:final": "sass --style=compressed",
     "dev": "npm run serve && npm run css:dev"
