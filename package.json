@@ -8,7 +8,8 @@
     "serve": "npx @11ty/eleventy --input=content --serve",
     "css:dev": "sass src/styles/main.scss public/styles.css --style=expanded --watch",
     "css:final": "sass --style=compressed",
-    "dev": "npm run serve && npm run css:dev"
+    "dev": "npm run serve && npm run css:dev",
+    "deploy": "npx @11ty/eleventy && npm run css:final"
   },
   "repository": {
     "type": "git",
