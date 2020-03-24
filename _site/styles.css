@@ -10,6 +10,11 @@ ul {
   padding: 0;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
 @media (min-width: 1000px) {
   main {
     display: flex;
