@@ -1,9 +1,7 @@
 ---
 layout: index.html
+title: "This is project 2's title"
 ---
 
-{{ title }}
-HI! 
-{{ endtitle }}
 
 # Here's my test project
