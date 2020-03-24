@@ -1,6 +1,8 @@
 {% include _head.html %}
+{{ title }}
 {% include _nav.html %}
 <main>
+  {{ content }}
   <ul class="project-list">
     {%- for post in collections.all -%}
       <li>

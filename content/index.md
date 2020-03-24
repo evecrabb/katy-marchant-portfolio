@@ -1,10 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
 layout: index.html
+title: "Miss KV Marchant"
 ---
-
-{{ title }}
-HI! 
-{{ endtitle }}
 
 ## Hello Eleventy - this hopefully will use the template!
