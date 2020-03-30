@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 
   &__item {
-    $project0list__item: &;
+    $project-list__item: &;
     display: block;
     position: relative;
     overflow-wrap: break-word;
@@ -36,7 +36,7 @@
     }
 
     &:hover {
-      #{$project0list__item}-title {
+      #{$project-list__item}-title {
         opacity: 1;
       }
     }
