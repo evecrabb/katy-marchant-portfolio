@@ -16,7 +16,7 @@ ol {
   list-style-type: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 640px) {
   main {
     display: flex;
   }
@@ -49,9 +49,6 @@ header nav .km-nav__item-link {
   display: block;
   position: relative;
   overflow-wrap: break-word;
-  min-width: 320px;
-  max-width: 500px;
-  flex: 1 1 500px;
 }
 .project-list__item-image {
   display: block;
@@ -74,6 +71,11 @@ header nav .km-nav__item-link {
 }
 .project-list__item:hover .project-list__item-title {
   opacity: 1;
+}
+@media (min-width: 640px) {
+  .project-list {
+    flex-wrap: nowrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
