@@ -61,13 +61,18 @@ header nav .km-nav__item-link {
   bottom: 24px;
   left: 24px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
   text-transform: uppercase;
   transition: opacity 0.1s ease-in-out;
   opacity: 0;
+}
+.project-list__item-date {
+  display: block;
 }
 .project-list__item:hover .project-list__item-title {
   opacity: 1;

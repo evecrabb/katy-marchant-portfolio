@@ -11,7 +11,10 @@
         <li>
           <a class="project-list__item" href="{{ post.url }}">
             <img src="{{ post.url }}/{{ .post.data.featuredImage }}" class="project-list__item-image" />
-            <span class="project-list__item-title">{{ .post.data.title }}</span>
+            <div class="project-list__item-title">
+              <time class="project-list__item-date" datetime="{{ .post.data.year }}">{{ .post.data.year }}</time><br>
+              <h3 class="project-list__item-heading">{{ .post.data.title }}</h3>
+            </div>
           </a>
         </li>
       {%- endfor -%}
