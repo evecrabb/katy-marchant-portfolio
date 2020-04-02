@@ -3,7 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    {% if layout == index.html %}
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    {% else %}
+        <link type="text/css" rel="stylesheet" href="/styles.css">
+    {% endif %}
     <meta name="robots" content="noindex" />
 </head>
 <body>
