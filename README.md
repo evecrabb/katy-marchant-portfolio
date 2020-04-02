@@ -21,6 +21,5 @@ Please don't touch these!
 
 
 ## Dev notes/resources
-(netflify template)[https://github.com/danurbanowicz/eleventy-netlify-boilerplate]
 https://shopify.github.io/liquid/basics/introduction/
 https://rphunt.github.io/eleventy-walkthrough/template-files.html#folderstructure
