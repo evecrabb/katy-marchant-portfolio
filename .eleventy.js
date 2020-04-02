@@ -5,4 +5,9 @@ module.exports = function(eleventyConfig) {
     "gif",
     "png"
   ]);
-};
+
+  eleventyConfig.addShortcode("oneColImage", function(image, alt) {
+    return `<img class="project-asset" src="${image}" alt="${alt}">`;
+  });
+
+  }

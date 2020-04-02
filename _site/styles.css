@@ -83,4 +83,9 @@ header nav .km-nav__item-link {
   }
 }
 
+.project-asset {
+  display: block;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
