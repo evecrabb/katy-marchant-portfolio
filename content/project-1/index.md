@@ -5,4 +5,4 @@ title: "This is the title of project 1"
 year: 2020
 ---
 
-{% oneColImage "conga.png" "conga!" %}
+{% image "conga.png" "conga!" %}
