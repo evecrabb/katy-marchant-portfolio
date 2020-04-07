@@ -6,3 +6,8 @@ year: 2020
 ---
 
 {% image "conga.png" "conga!" %}
+
+{% multiColumns %}
+  {% image "eve.jpg" "LSH1" %}
+  {% image "eve.jpg" "LSH2" %}
+{% endmultiColumns %}

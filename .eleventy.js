@@ -10,6 +10,11 @@ module.exports = function(eleventyConfig) {
     return `<img class="project-asset" src="${image}" alt="${alt}">`;
   });
 
-
+  eleventyConfig.addPairedShortcode("multiColumns", function(item1, item2) {
+    return `<div class="project-asset-container">
+      ${item1}
+      ${item2}
+    </div>`;
+  });
 
   }
